@@ -10,6 +10,8 @@ If you to setup this program.You will need these:
 			7.MySQLdb
 			8.mmseg 1.3.0 for python(https://pypi.python.org/pypi/mmseg/1.3.0)
 You can get all of them through apt-get or easy_install or pip.It’s easy.Enough about how to set up the program.I’m going to make a simple guide for reading the source code.Basically my program have 4 layers(webqq layer, algorithms layer, middle layer and GUI layer).GUI layer isn’t written by me.So this repositories do not include any source code about GUI layer.
+
+
 [webqq layer]
 This is the core of this program.There’re 2 parts in this layer.Base communication part and protocol.Base communication is written in C++ using curl to offer a concurrent http request(Although I didn’t use any multiplexing APIs like epoll or select.Instead of this I used polling model for simplification purposes.Any body interested in this can try to rewrite it using epoll or select).There is a file names base_communicate.py put the C++ program and python program together.And the protocol.py contains some functions dealing with WebQQ Protocol.It’s hard to tell you all about the this layer.If you want to know more, read the source yourself.
 
