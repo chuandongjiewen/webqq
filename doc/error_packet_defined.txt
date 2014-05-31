@@ -1,0 +1,7 @@
+1000 ~ 2000为返回包错误
+
+1000 poll出错
+1001 get_friend_list出错
+1002 get_group_list出错
+1003 get_pic出错
+1004 查询qq号出错
